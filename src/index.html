@@ -3,18 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A sample application demonstrating how to use Dojo Bootstrap with the ArcGIS API for JavaScript">
-    <meta name="author" content="Tom Wayson">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="An application for routing with  given graph">
+    <meta name="author" content="Arnaud Ferrand">
     <link rel="shortcut icon" href="./favicon.png">
 
-    <title>Dojo Bootstrap Map</title>
+    <title>Graph and Route</title>
 
     <!-- dependency styles from CDN -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" media="screen">
     <!-- build:remove -->
-    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.12/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
     <link rel="stylesheet" type="text/css" href="//esri.github.io/bootstrap-map-js/dist/css/bootstrapmap.min.css">
     <!-- /build -->
 
@@ -68,6 +67,9 @@
           }, {
             name: 'bootstrap-map-js',
             location: '//esri.github.io/bootstrap-map-js/src/'
+          }, {
+            name: 'spin-js',
+            location: '//fgnass.github.io/spin.js/'
           }
         ]
       };
@@ -76,7 +78,7 @@
     <!-- /build -->
 
     <!-- build:[src] dojo/dojo.js -->
-    <script src="//js.arcgis.com/3.12"></script>
+    <script src="//js.arcgis.com/3.13"></script>
     <!-- /build -->
 
     <script>require([ 'app/main' ]);</script>
