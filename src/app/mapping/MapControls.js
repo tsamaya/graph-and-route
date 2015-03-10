@@ -98,7 +98,6 @@ define([
         this.map = BootstrapMap.create(this.mapNode.id, this.options);
         this._initLayers();
         this._initWidgets();
-        //this._wireEvents();
       }
     },
 
@@ -118,8 +117,7 @@ define([
           });
         }
       }
-      this._initWidgets();
-      //this._wireEvents();
+      this._initWidgets();      
       topic.publish('webmap/load', response);
     },
 
@@ -176,6 +174,7 @@ define([
           layerInfos: layerInfos
         }, this.legendNodeId);
       this.legend.startup();
+      this._wireEvents();
     },
 
     // init map widgets if they are in config

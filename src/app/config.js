@@ -8,10 +8,12 @@ define(['esri/InfoTemplate'], function(InfoTemplate) {
       // Example configuration when using a webmap
       // **********************************************
 
+      itemId: '2b2b3e46cf524b4d98fba54dafd114ff',
+
       // example web maps:
       // Portland Bike Map example from Boostrap Map demo pages, see
       // http://esri.github.io/bootstrap-map-js/demo/dojo/webmap.html
-      itemId: '8e42e164d4174da09f61fe0d3f206641',
+      //itemId: '8e42e164d4174da09f61fe0d3f206641',
 
       // SoCal running trails
       // GPX tracks embeded in web map as feature collections
