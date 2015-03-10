@@ -96,6 +96,7 @@ define([
         BootstrapMap.createWebMap(this.itemId, this.mapNode.id, this.options).then(lang.hitch(this, '_onWebMapLoad'));
       } else {
         this.map = BootstrapMap.create(this.mapNode.id, this.options);
+        this._wireEvents();
         this._initLayers();
         this._initWidgets();
       }
@@ -107,6 +108,7 @@ define([
       var self = this;
       var layerInfos;
       this.map = response.map;
+      this._wireEvents();
       if (this.legendNodeId) {
         layerInfos = arcgisUtils.getLegendLayers(response);
         if (this.map.loaded) {
@@ -174,7 +176,6 @@ define([
           layerInfos: layerInfos
         }, this.legendNodeId);
       this.legend.startup();
-      this._wireEvents();
     },
 
     // init map widgets if they are in config
