@@ -36,6 +36,7 @@ define([
       // NOTE: BootstrapMap needs to work off an id
       this.mapNode.id = this.id + 'Map';
       this._initMap();      
+      //this._wireEvents();
     },
     _wireEvents: function() {
         // summary:
